@@ -19,6 +19,15 @@ public class MatrixMultiplication {
                 {20, -7, 12, -11},
                 {-12, -13, -14, 7}};
 
+13 -3 -25 30
+-3 -16 23 18
+20 -7 12 -5
+22 -15 4 7
+13 10 11 12
+13 14 -23 18
+20 -7 12 -11
+-12 -13 -14 7
+
          */
         long[][] A;
         long[][] B;
@@ -48,13 +57,13 @@ public class MatrixMultiplication {
         double time = System.nanoTime();
         long[][] result = Divide_Conquer(A, B, A.length);
         time = System.nanoTime() - time;
-        //rint_matrix(result);
+        print_matrix(result);
         System.out.println("\n"+time/1000000000.0+"sec");
 
         time = System.nanoTime();
         long[][] result2 = Strassen(A, B, A.length);
         time = System.nanoTime() - time;
-        //print_matrix(result2);
+        print_matrix(result2);
         System.out.println("\n"+time/1000000000.0+"sec");
 
     }
