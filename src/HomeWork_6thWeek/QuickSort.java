@@ -56,10 +56,10 @@ public class QuickSort {
 
     public static int partition(int[] A, int start, int end){
         int x = A[end];
-        int i = start-1;
+        int i = start-1;//-1
         for(int j = start; j < end; j++){
             if(A[j] <= x){
-                i += 1;
+                i += 1;//0~
                 Swap(A, i, j);
             }
         }

@@ -113,7 +113,7 @@ class Prim_Solution{
             System.out.println("Q : "+que);
             System.out.println("List : "+list);
 
-            //ystem.out.println(que);
+            //System.out.println(que);
         }
         System.out.println(list);
         System.out.println("total : "+total);
