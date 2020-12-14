@@ -3,7 +3,7 @@ package HomeWork_4thWeek;
 public class PoweringNumber {
     public static void main(String[] args){
         int a = 2;
-        int n = 10;
+        int n = 5;
 
         int lgN = Powering_Number(a, n);
         int N = normal_method(a, n);
@@ -20,18 +20,16 @@ public class PoweringNumber {
         else if(n == 1){
             return a;
         }
-        else if(n%2 != 0){
+        else if(n%2 != 0){//홀수
             for(int i = 0; i < (n-1)/2; i++){
                 answer *= a;
             }
-
             answer = answer*answer*a;
         }
-        else if(n%2 == 0){
+        else if(n%2 == 0){//짝수
             for(int i = 0; i < n/2; i++){
                 answer *= a;
             }
-
             answer = answer*answer;
         }
 
